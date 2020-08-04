@@ -2,8 +2,8 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import App from './App';
 
-test('hi there knarf', () => {
+test('I was changed on the feature branch Knarf', () => {
   const { getByText } = render(<App />);
-  const linkElement = getByText(/Hi there Knarf!/i);
+  const linkElement = getByText(/I was changed on the feature branch Knarf!/i);
   expect(linkElement).toBeInTheDocument();
 });
